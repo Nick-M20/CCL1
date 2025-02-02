@@ -1,0 +1,78 @@
+
+
+/* Basic resets  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+
+#startScreen,
+#gameScreen,
+#optionsScreen,
+#finishScreen {
+  width: 100vw;
+  height: 100vh;
+  display: none; /* hidden by default */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Show only the start screen by default */
+#startScreen {
+  display: flex;
+  background: #111;
+}
+
+
+#gameScreen, #optionsScreen, #finishScreen {
+  background: #111;
+}
+
+
+.bigButton {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+  border: 2px solid #777;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.bigButton:hover {
+  background: #555;
+}
+
+/* The canvas styling */
+#laserCanvas {
+  background: #000;
+  border: 2px solid #777;
+  margin-top: 1rem;
+}
+
+#startScreen {
+  background: url("BACKGROUND.png") no-repeat center center;
+  background-size: cover;
+}
+
+#finishScreen {
+  background: url("BACKGROUND.png") no-repeat center center;
+  background-size: cover;
+}
+
+
+#gameScreen {
+  background: url("canvas.png") no-repeat center center !important;
+  background-size: cover;
+}
